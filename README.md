@@ -1,8 +1,12 @@
 # BML
+
 ##Figure1
+
 library(tidyverse)
+
 setwd("C:/Users/Angel/Downloads/qiime16S_2022")
 setwd("C:/Users/Angel/Downloads/qiime18S_2022")
+
 #Read alpha diversity data:
 alphadiv<-read.csv("core-metrics/alphadiversity.csv")
 shannon_bml<-alphadiv %>% select(source2, platform, year, season, surfacevsbottom, description, shannon_entropy) %>% 
